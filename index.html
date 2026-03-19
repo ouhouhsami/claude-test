@@ -4,109 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claude App Test</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@gouvfr/dsfr@1.11.2/dist/dsfr/dsfr.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@gouvfr/dsfr@1.11.2/dist/utility/icons/icons.min.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header role="banner" class="fr-header">
-      <div class="fr-header__body">
-        <div class="fr-container">
-          <div class="fr-header__body-row">
-            <div class="fr-header__brand fr-enlarge-link">
-              <div class="fr-header__brand-top">
-                <div class="fr-header__logo">
-                  <p class="fr-logo">
-                    République<br />Française
-                  </p>
-                </div>
-              </div>
-              <div class="fr-header__service">
-                <a href="/" title="Accueil - Claude App Test">
-                  <p class="fr-header__service-title">Claude App Test</p>
-                </a>
-              </div>
-            </div>
-          </div>
+  <body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-sm">
+      <div class="max-w-5xl mx-auto px-6 py-4 flex items-center gap-4">
+        <div class="text-xs font-bold uppercase leading-tight border-r border-gray-300 pr-4 text-blue-900">
+          République<br />Française
         </div>
+        <a href="/" class="text-xl font-semibold text-blue-900 hover:underline">
+          Claude App Test
+        </a>
       </div>
     </header>
 
-    <main role="main" id="content">
-      <div class="fr-container fr-my-6w">
-        <h1>Claude App Test</h1>
-        <p class="fr-text--lead">
-          Bienvenue sur cette page de démonstration utilisant le Système de
-          Design de l'État (DSFR).
-        </p>
+    <main class="flex-1 max-w-5xl mx-auto px-6 py-12 w-full">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">Claude App Test</h1>
+      <p class="text-lg text-gray-600 mb-10">
+        Bienvenue sur cette page de démonstration utilisant Tailwind CSS.
+      </p>
 
-        <div class="fr-grid-row fr-grid-row--gutters fr-mt-4w">
-          <div class="fr-col-12 fr-col-md-4">
-            <div class="fr-card fr-card--shadow">
-              <div class="fr-card__body">
-                <div class="fr-card__content">
-                  <h2 class="fr-card__title">Composant 1</h2>
-                  <p class="fr-card__desc">
-                    Un exemple de carte avec le DSFR.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fr-col-12 fr-col-md-4">
-            <div class="fr-card fr-card--shadow">
-              <div class="fr-card__body">
-                <div class="fr-card__content">
-                  <h2 class="fr-card__title">Composant 2</h2>
-                  <p class="fr-card__desc">
-                    Un autre exemple de carte avec le DSFR.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fr-col-12 fr-col-md-4">
-            <div class="fr-card fr-card--shadow">
-              <div class="fr-card__body">
-                <div class="fr-card__content">
-                  <h2 class="fr-card__title">Composant 3</h2>
-                  <p class="fr-card__desc">
-                    Encore un exemple de carte avec le DSFR.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h2 class="text-lg font-semibold mb-2">Composant 1</h2>
+          <p class="text-gray-500">Un exemple de carte avec Tailwind CSS.</p>
         </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h2 class="text-lg font-semibold mb-2">Composant 2</h2>
+          <p class="text-gray-500">Un autre exemple de carte avec Tailwind CSS.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h2 class="text-lg font-semibold mb-2">Composant 3</h2>
+          <p class="text-gray-500">Encore un exemple de carte avec Tailwind CSS.</p>
+        </div>
+      </div>
 
-        <div class="fr-mt-4w">
-          <button class="fr-btn">Bouton principal</button>
-          <button class="fr-btn fr-btn--secondary fr-ml-2w">Bouton secondaire</button>
-        </div>
+      <div class="flex gap-4">
+        <button class="bg-blue-700 hover:bg-blue-800 text-white font-medium px-6 py-2 rounded-lg transition">
+          Bouton principal
+        </button>
+        <button class="border border-blue-700 text-blue-700 hover:bg-blue-50 font-medium px-6 py-2 rounded-lg transition">
+          Bouton secondaire
+        </button>
       </div>
     </main>
 
-    <footer class="fr-footer" role="contentinfo">
-      <div class="fr-container">
-        <div class="fr-footer__body">
-          <div class="fr-footer__brand fr-enlarge-link">
-            <a href="/" title="Retour à l'accueil">
-              <p class="fr-logo">République<br />Française</p>
-            </a>
-          </div>
-          <div class="fr-footer__content">
-            <p class="fr-footer__content-desc">Claude App Test — DSFR v1.11.2</p>
-          </div>
+    <footer class="bg-white border-t border-gray-200 mt-auto">
+      <div class="max-w-5xl mx-auto px-6 py-6 flex items-center gap-4">
+        <div class="text-xs font-bold uppercase leading-tight border-r border-gray-300 pr-4 text-blue-900">
+          République<br />Française
         </div>
+        <p class="text-sm text-gray-500">Claude App Test — Tailwind CSS</p>
       </div>
     </footer>
 
-    <script src="https://unpkg.com/@gouvfr/dsfr@1.11.2/dist/dsfr/dsfr.module.min.js" type="module"></script>
-    <script src="https://unpkg.com/@gouvfr/dsfr@1.11.2/dist/dsfr/dsfr.nomodule.min.js" nomodule></script>
   </body>
 </html>
